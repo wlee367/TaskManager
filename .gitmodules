@@ -1,0 +1,6 @@
+[submodule "nestjs-task-management-webapp"]
+	path = nestjs-task-management-webapp
+	url = https://github.com/wlee367/nestjs-task-management-webapp
+[submodule "nest-js-task-management-api"]
+	path = nest-js-task-management-api
+	url = https://github.com/wlee367/nest-js-task-management-api
