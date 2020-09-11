@@ -6,10 +6,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]](https://github.com/wlee367/TaskManager/graphs/contributors)
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -47,19 +43,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`wlee367`, `repo_name`, `twitter_handle`, `email`
+[![TaskManagerScreenShot]][product-screenshot]
 
 
 ### Built With
 
-* []()
-* []()
-* []()
-
+* [React](https://reactjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Nest.JS](https://nestjs.com/)
+* [PostgresSQL](https://www.postgresql.org/)
 
 
 <!-- GETTING STARTED -->
@@ -70,28 +62,74 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* npm or yarn
 ```sh
 npm install npm@latest -g
 ```
+* PostgresSQL 12
+* PgAdmin 4
+
+**** please make sure PgAdmin4 and PostgresSQL is runnig **** 
 
 ### Installation
 
-1. Clone the repo
+In the near future, I will convert this project into a docker project so that it can be run in one environment. However, until then, please follow the following steps. 
+
+1. Clone the repo for the API and CD into new directory
 ```sh
-git clone https://github.com/wlee367/TaskManager.git
+git clone https://github.com/wlee367/nest-js-task-management-api
+cd nest-js-task-management-api
+```
+1a. Adjust /config/default.yml
+```yaml
+server:
+  port: ${your_desired_port_here} // will be set as 3001
+
+db:
+  type: 'postgres'
+  port: 5432 // change to port your postgres installation is running
+  database: 'taskmanagement' // name of the database. when app starts up, it will create a database with this name if it doesn't exist. 
+
+jwt:
+  expiresIn: 3600000000000
+
 ```
 2. Install NPM packages
 ```sh
-npm install
+yarn install
 ```
-
+3. Run project in development mode
+```sh
+yarn start:dev
+```
+4. In a new terminal window, clone the repo for the webapp, and cd into new directory.
+```sh
+git clone https://github.com/wlee367/nestjs-task-management-webapp
+cd nestjs-task-management-webapp
+```
+4a. IF you changed the port number in step 1a, you will want to adjust /src/app/redux/httpService.js and adjust the `BASE_URL` variable to match your port.
+```js
+  BASE_URL = "http://localhost:{YOUR_PORT_NUMBER}"; 
+```
+5. Install NPM packages
+```sh
+yarn install
+```
+6. Run project
+```sh
+yarn start
+```
+7. Visit http://localhost:3000 to see the project connected. 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+In this project, you can sign up as a user by going to localhost:3000/register. 
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+[![Register]][register-screenshot]
+
+[![TaskManagerScreenShot]][product-screenshot]
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -122,27 +160,12 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
 
 Project Link: [https://github.com/wlee367/repo_name](https://github.com/wlee367/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -158,4 +181,5 @@ Project Link: [https://github.com/wlee367/repo_name](https://github.com/wlee367/
 [license-url]: https://github.com/wlee367/TaskManager/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/wlee367
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/demo.gif
+[register-screenshot]: images/Reigster.png
