@@ -42,6 +42,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+This repository was meant to tie the two projects I made together, [the API project](https://github.com/wlee367/nest-js-task-management-api) and [the webapp project](https://github.com/wlee367/nestjs-task-management-webapp), and present them as one project. Please visit the [readme of the api project](https://github.com/wlee367/nest-js-task-management-api/blob/master/README.md) for motivations behind the API project. 
+
 ![TaskManagerScreenShot][product-screenshot]
 
 
@@ -51,7 +53,6 @@
 * [TypeScript](https://www.typescriptlang.org/)
 * [Nest.JS](https://nestjs.com/)
 * [PostgresSQL](https://www.postgresql.org/)
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
