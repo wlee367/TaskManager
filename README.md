@@ -43,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![TaskManagerScreenShot]][product-screenshot]
+![TaskManagerScreenShot][product-screenshot]
 
 
 ### Built With
@@ -126,21 +126,33 @@ yarn start
 ## Usage
 In this project, you can sign up as a user by going to localhost:3000/register. 
 
-[![Register]][register-screenshot]
+![Register][register-screenshot]
 
-[![TaskManagerScreenShot]][product-screenshot]
+Your password must contain one capital letter, at least one special character, and be a minimum of 8 characters long. Otherwise, you will get this error:
 
+![RegisterError][register-error]
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Once you register / login, you will be redirected to the main screen like this: 
 
+![Main Screen][main-screen]
+
+To create a new task, simply click on the plus icon in the bottom right, then you'll be greeted with a modal like this: 
+
+![CreateModal][create-modal]
+
+Once you create a task, you will be able to drag and drop it to a different column to indicate a new status, or leave a comment like this:
+
+![comment][comment]
+
+![comment-todo][comment-todo]
+
+If you click on user activity - you will be able to see a history of all actions you have taken. 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/wlee367/TaskManager/issues) for a list of proposed features (and known issues).
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -163,9 +175,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - Jason Lee - [email](mailto:proto.rhee@gmail.com)
 
-Project Link: [https://github.com/wlee367/repo_name](https://github.com/wlee367/repo_name)
+Project Link: [https://github.com/wlee367/repo_name](https://github.com/wlee367/TaskManager)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -183,3 +195,8 @@ Project Link: [https://github.com/wlee367/repo_name](https://github.com/wlee367/
 [linkedin-url]: https://linkedin.com/in/wlee367
 [product-screenshot]: images/demo.gif
 [register-screenshot]: images/Reigster.png
+[register-error]: images/Error.png
+[main-screen]: images/MainScreen.png
+[create-modal]: images/New%20Task%20Modal.png
+[comment]: images/comment.png
+[comment-todo]: images/commentTodo.png
