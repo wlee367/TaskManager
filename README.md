@@ -36,7 +36,6 @@
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 
 
@@ -166,7 +165,6 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
 <!-- LICENSE -->
 ## License
 
@@ -177,7 +175,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Jason Lee - [email](mailto:proto.rhee@gmail.com)
 
-Project Link: [https://github.com/wlee367/repo_name](https://github.com/wlee367/TaskManager)
+Project Link: [https://github.com/wlee367/TaskManager](https://github.com/wlee367/TaskManager)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
