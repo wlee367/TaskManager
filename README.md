@@ -175,7 +175,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - Jason Lee - [email](mailto:proto.rhee@gmail.com)
+Jason Lee - [email](mailto:proto.rhee@gmail.com)
 
 Project Link: [https://github.com/wlee367/repo_name](https://github.com/wlee367/TaskManager)
 
